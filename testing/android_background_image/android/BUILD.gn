@@ -28,10 +28,7 @@ gradle_task("build_apk") {
   sources = _android_sources
   outputs = [ "$root_out_dir/android_background_image/app/outputs/apk/debug/app-debug.apk" ]
 
-  deps = [
-    ":android_lint",
-    "//flutter/testing/android_background_image:android_background_image_snapshot",
-  ]
+  deps = [ "//flutter/testing/android_background_image:android_background_image_snapshot" ]
 }
 
 copy("android") {

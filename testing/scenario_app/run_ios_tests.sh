@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit
+
 set -e
 
 

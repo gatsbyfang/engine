@@ -41,10 +41,7 @@ gradle_task("build_apk") {
   sources = _android_sources
   outputs = [ "$root_out_dir/scenario_app/app/outputs/apk/debug/app-debug.apk" ]
 
-  deps = [
-    ":android_lint",
-    "//flutter/testing/scenario_app:scenario_app_snapshot",
-  ]
+  deps = [ "//flutter/testing/scenario_app:scenario_app_snapshot" ]
 }
 
 copy("android") {
